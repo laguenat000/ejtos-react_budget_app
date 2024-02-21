@@ -11,7 +11,7 @@ const AllocationForm = (props) => {
     const submitEvent = () => {
 
             if(cost > remaining) {
-                alert("The value cannot exceed remaining funds  $"+remaining);
+                alert("The value cannot exceed remaining funds  £"+remaining);
                 setCost("");
                 return;
             }
@@ -39,16 +39,16 @@ const AllocationForm = (props) => {
 
             <div className="input-group mb-3" style={{ marginLeft: '2rem' }}>
                     <div className="input-group-prepend">
-                <label className="input-group-text" htmlFor="inputGroupSelect01">Category</label>
+                <label className="input-group-text" htmlFor="inputGroupSelect01">Department</label>
                   </div>
                   <select className="custom-select" id="inputGroupSelect01" onChange={(event) => setName(event.target.value)}>
                         <option defaultValue>Choose...</option>
-                        <option value="Food" name="food"> Food</option>
-                <option value="Going Out" name="going out">Going Out</option>
-                <option value="Subscriptions" name="subscriptions">Subscriptions</option>
-                <option value="Medical Expenses" name="medical expenses">Medical Expenses</option>
-                <option value="Groceries" name="groceries">Groceries</option>
-                <option value="Savings" name="savings">Savings</option>
+                        <option value="Marketing" name="marketing"> Marketing</option>
+                <option value="Sales" name="sales">Sales</option>
+                <option value="Finance" name="finance">Finance</option>
+                <option value="HR" name="hr">HR</option>
+                <option value="IT" name="it">IT</option>
+                <option value="Admin" name="admin">Admin</option>
                   </select>
 
                     <div className="input-group-prepend" style={{ marginLeft: '2rem' }}>
